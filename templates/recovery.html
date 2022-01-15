@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Swoosh - Password Recovery{% endblock title %}
+
+{% block registration %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/registration">Registration</a>
+    </li>
+{% endblock registration %}
+
+{% block login %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/login">Log In</a>
+    </li>
+{% endblock login %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="content">
+    <div class="forma">
+      <h2>Password Recovery</h2>
+      
+      <form action="{{ url_for('recovery') }}" method="POST"> 
+        <label>
+          <span>Your Email:</span>
+          <input type="email" name="useremail" id="useremail" required>
+        </label>
+
+        <label>
+          <span>New Password:</span>
+          <input type="password" name="newpswd" id="newpswd" required>
+        </label>
+
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    
+      <div class="form-img">
+        <div class="img">
+        </div>
+      </div>
+    </div>
+</div>
+  
+{% endblock content %}

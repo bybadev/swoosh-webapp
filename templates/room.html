@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} Swoosh - Join or Create Chat Room {% endblock title %}
+
+{% block profile %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/user">Profile</a>
+    </li>
+{% endblock profile %}
+
+{% block content %}
+    
+    <div class="container">
+        <div class="content">
+            <div class="forma">
+                <h2>Join or Create New Chat Room</h2>
+
+                <form action="{{ url_for('join') }}" method="POST"> 
+                <label>
+                    <span>Room Name / Number:</span>
+                    <input type="text" name="room" id="room" required>
+                </label>
+
+                <label>
+                    <span>Room Password:</span>
+                    <input type="password" name="roompswd" id="roompswd" required>
+                </label>
+
+                <button type="submit" class="submit">Submit</button>
+                </form>
+            
+                <div class="form-img">
+                    <div class="img">
+                    </div>
+                </div>
+            </div>
+    </div>
+{% endblock content %}

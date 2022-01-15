@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Swoosh - Log In{% endblock title %}
+
+{% block registration %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/registration">Registration</a>
+    </li>
+{% endblock registration %}
+
+{% block login %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/login">Log In</a>
+    </li>
+{% endblock login %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="content">
+    <div class="forma">
+      <h2>Log In</h2>
+
+      <form action="{{ url_for('login') }}" method="POST"> 
+        <label>
+          <span>Username:</span>
+          <input type="text" name="username" id="username" required>
+        </label>
+
+        <label>
+          <span>Password:</span>
+          <input type="password" name="userpswd" id="userpswd" required>
+        </label>
+
+        <button type="submit" class="submit">Submit</button>
+        <a href="/recovery"> <p class="forgot-pass">Forgot Password ?</p> </a>
+      </form>
+    
+      <div class="form-img">
+        <div class="img">
+        </div>
+      </div>
+    </div>
+</div>
+  
+{% endblock content %}

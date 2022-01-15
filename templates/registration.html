@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Swoosh - Registration{% endblock title %}
+
+{% block js %}<script type="text/javascript" src="static/antibot.js"></script>{% endblock js %}
+
+{% block registration %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/registration">Registration</a>
+    </li>
+{% endblock registration %}
+
+{% block login %} 
+    <li class="nav-item">
+        <a class="nav-link" href="/login">Log In</a>
+    </li>
+{% endblock login %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="content">
+    <div class="forma">
+      <h2>Registration</h2>
+
+      <form action="{{ url_for('register') }}" method="POST" onsubmit="return antiBot()"> 
+        <label>
+          <span>Username:</span>
+          <input type="text" name="username" id="username" required>
+        </label>
+          
+        <label>
+          <span>Email:</span>
+          <input type="email" name="useremail" id="useremail" required>
+        </label>
+
+        <label>
+          <span>Password:</span>
+          <input type="password" name="userpswd" id="userpswd" required>
+        </label>
+        
+        <label>
+          <span>Security Question:</span>
+          <input type="text" name="secquestion" id="secquestion" placeholder="15+25?" required>
+        </label>
+
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    
+      <div class="form-img">
+        <div class="img">
+        </div>
+      </div>
+    </div>
+</div>
+  
+{% endblock content %}
+

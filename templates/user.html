@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Swoosh - User Account{% endblock title %}
+
+{% block chat %} <a class="nav-link" href="{{url_for('join')}}">Join Chat Room</a> {% endblock chat %}
+
+{% block content %}
+
+<h1 class="himess">Hi, {{ user }}</h1>
+
+<a href="{{ url_for('logout') }}" class="logout">Log Out</a>
+
+{% endblock content %}

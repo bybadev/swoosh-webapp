@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-------------------------MENU------------------------------*/
+body{
+    height: 100vh;
+    background: rgb(173,49,182);
+    background: linear-gradient(138deg, rgba(173,49,182,1) 37%, rgba(15,144,214,1) 100%); 
+}
+
+.menu-bar{
+    background-image: linear-gradient(-90deg, #3977ce, #9a3cba);
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 2px;
+    color: #fff!important;
+    font-weight: 400;
+}
+
+.navbar-nav {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+}
+
+.navbar .fa {
+    color: #fff!important;
+    font-size: 26px;
+}
+
+.nav-link:hover {
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-brand img {
+    width: 32px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-link:hover {
+        border: none!important;
+    }
+}
+
+/*-------------------------USER PROFILE------------------------------*/
+
+.himess {
+    text-align: right;
+    font-size: 50px;
+    top: 10%;
+    right: 2%;
+    width: 100%;
+    position: fixed;
+}
+
+.logout {
+    text-align: right;
+    font-size: 30px;
+    top: 16%;
+    right: 2%;
+    width: 100%;
+    position: fixed;
+}
+
+#welcomemess{
+    text-align: center;
+    font-size: 80px;
+    top: 45%;
+    width: 100%;
+    position: fixed;
+}
+/*
+#beta {
+    text-align: center;
+    font-size: 20px;
+    top: 90%;
+    width: 100%;
+    position: fixed;
+} */
+/*-------------------------NOTIFICATIONS-------------------------------*/
+
+.x-btn {
+    position: absolute;
+    top: -10px;
+    right: 5px; 
+    color: white;
+    margin-top: 9px;
+    font-size: 17px;
+  }
+
+.error {
+    padding: 12px 20px;
+    color: #ffffff;
+    display: inline-block;
+    right: 10px;
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(232, 77, 77, 0.3);
+    background: -webkit-linear-gradient(315deg, #f38383, #cc1d1d);
+    background: linear-gradient(135deg, #ff7373, #ce1f1f);
+    position: fixed;
+    margin-top: 10px;
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: calc(50% - 20px);
+    z-index: 2147483647;
+  }
+
+.success {
+    padding: 12px 20px;
+    color: #ffffff;
+    display: inline-block;
+    right: 10px;
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+    background: -webkit-linear-gradient(315deg, #abf37b, #41b80a);
+    background: linear-gradient(135deg, #a0f080, #4aad07);
+    position: fixed;
+    margin-top: 10px;
+    opacity: 1;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: calc(50% - 20px);
+    z-index: 2147483647;
+  }
+  
+.info {
+    padding: 12px 20px;
+    color: #ffffff;
+    display: inline-block;
+    right: 10px;
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+    background: -webkit-linear-gradient(315deg, #73a5ff, #5477f5);
+    background: linear-gradient(135deg, #73a5ff, #5477f5);
+    position: fixed;
+    margin-top: 10px;
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: calc(50% - 20px);
+    z-index: 2147483647;
+  }
