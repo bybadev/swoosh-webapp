@@ -16,7 +16,6 @@ My graduation project based on Python (Flask) for backend and HTML/CSS for front
 
 # Technologies used:
 - Python (Flask)
-- SocketIO
 - SQL (MySQL)
 - HTML
 - CSS
