@@ -14,6 +14,14 @@ My graduation project based on Python (Flask) for backend and HTML/CSS for front
 - Chat Room Page
 <img width="1440" alt="Screen Shot 2022-01-15 at 20 37 30" src="https://user-images.githubusercontent.com/61392800/149635594-87672ded-f568-4db7-a3df-297e3b010a27.png">
 
+# Technologies used:
+- Python (Flask)
+- SocketIO
+- SQL (MySQL)
+- HTML
+- CSS
+- JavaScript
+
 # How to run?
 
 1. Create Virtual Environment 
